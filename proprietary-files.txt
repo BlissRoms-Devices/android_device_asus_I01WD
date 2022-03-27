@@ -383,10 +383,7 @@ vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 vendor/etc/charger_fstab.qti
 
 # Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/bin/gf_ver.sh
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
--vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml
 vendor/etc/init/init.goodixfp.rc
 vendor/etc/firmware/goodixfp.b00
 vendor/etc/firmware/goodixfp.b01
