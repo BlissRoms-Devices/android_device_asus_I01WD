@@ -35,7 +35,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/asus/I01WD/I01WD-vendor.mk)
+$(call inherit-product, vendor/asus/I01WD/I01WD-vendor.mk)
 
 # sm8150-common
 $(call inherit-product, device/asus/sm8150-common/common.mk)
