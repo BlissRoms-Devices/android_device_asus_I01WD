@@ -184,6 +184,21 @@ vendor/lib/libxditk_ditArchLIB.so
 vendor/lib/libxditk_ditBSP.so
 vendor/lib/vendor.asus.motor@1.0-impl.so
 vendor/lib/vendor.asus.motor@1.0.so
+vendor/lib/libxditk_ditBSP_JNI.so
+vendor/lib/camera.device@1.0-impl.so
+vendor/lib/camera.device@3.2-impl.so
+vendor/lib/camera.device@3.3-impl.so
+vendor/lib/camera.device@3.4-external-impl.so
+vendor/lib/camera.device@3.4-impl.so
+vendor/lib/camera.device@3.5-external-impl.so
+vendor/lib/camera.device@3.5-impl.so
+vendor/lib/camera.device@3.6-external-impl.so
+vendor/lib/libcamxfdalgov8.so
+vendor/lib/libcamxswprocessalgo.so
+vendor/lib/libcamxtintlessalgo.so
+vendor/lib/DataSet/arch/DIT_List.cfg
+vendor/lib/DataSet/ditSCidGen/msgchk.db
+vendor/lib/DataSet/ispDB/ParameterDB.db
 vendor/lib64/camera/components/com.arcsoft.node.hdrplusraw.so
 vendor/lib64/camera/components/com.arcsoft.node.realtimebokeh.so
 vendor/lib64/camera/components/com.arcsoft.node.supernightraw.so
@@ -297,6 +312,21 @@ vendor/lib64/libxditk_ditArchLIB.so
 vendor/lib64/libxditk_ditBSP.so
 vendor/lib64/vendor.asus.motor@1.0-impl.so
 vendor/lib64/vendor.asus.motor@1.0.so
+vendor/lib64/camera.device@1.0-impl.so
+vendor/lib64/camera.device@3.2-impl.so
+vendor/lib64/camera.device@3.3-impl.so
+vendor/lib64/camera.device@3.4-external-impl.so
+vendor/lib64/camera.device@3.4-impl.so
+vendor/lib64/camera.device@3.5-external-impl.so
+vendor/lib64/camera.device@3.5-impl.so
+vendor/lib64/camera.device@3.6-external-impl.so
+vendor/lib64/libxditk_ditBSP_JNI.so
+vendor/lib64/DataSet/arch/DIT_List.cfg
+vendor/lib64/DataSet/ditSCidGen/msgchk.db
+vendor/lib64/DataSet/ispDB/ParameterDB.db
+vendor/lib64/libcamxfdalgov8.so
+vendor/lib64/libcamxswprocessalgo.so
+vendor/lib64/libcamxtintlessalgo.so
 
 # Camera arcsoft
 vendor/lib/libarcsoft_beautyshot.so
