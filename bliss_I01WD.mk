@@ -9,6 +9,9 @@ $(call inherit-product, device/asus/I01WD/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
+# Bootanimation resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := I01WD
