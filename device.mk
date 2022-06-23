@@ -42,6 +42,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.I01WD
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/asus/I01WD/I01WD-vendor.mk)
 
