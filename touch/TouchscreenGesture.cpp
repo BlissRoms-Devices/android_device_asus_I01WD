@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 The LineageOS Project
+ * Copyright (C) 2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,29 +41,35 @@ const std::string kGesturePath = "/proc/driver/gesture_type";
 
 const std::map<int32_t, TouchscreenGesture::GestureInfo> TouchscreenGesture::kGestureInfoMap = {
     // clang-format off
-    {0, {34, "Smart Key"}},		//G
-    {1, {45, "Fp tap"}},		//X
-    {2, {30, "Fp swipe up"}},		//A
-    {3, {48, "Fp swipe down"}},	//B
-    {4, {32, "Fp swipe left"}},	//D
-    {5, {19, "Fp swipe right"}},	//R
-    {6, {46, "Letter C"}},
-    {7, {47, "Letter V"}},
-    {8, {44, "Letter Z"}},
+    {0, {17, "Letter W"}},
+    {1, {31, "Letter S"}},
+    {2, {18, "Letter e"}},
+    {3, {46, "Letter C"}},
+    {4, {44, "Letter Z"}},
+    {5, {47, "Letter V"}},
+    {6, {34, "Smart Key"}},		//G
+    {7, {45, "Fp tap"}},		//X
+    {8, {30, "Fp swipe up"}},		//A
+    {9, {48, "Fp swipe down"}},		//B
+    {10, {32, "Fp swipe left"}},	//D
+    {11, {19, "Fp swipe right"}},	//R
     // clang-format on
 };
 
-const uint8_t kKeyMaskGestureControl = 0x40;
+const uint8_t kKeyMaskGestureControl = 1 << 0;
 const std::vector<uint8_t> kGestureMasks = {
-    0x01,
-    0x01,
-    0x01,
-    0x01,
-    0x01,
-    0x01,
-    0x01,
-    0x01,
-    0x01,
+    1 << 1,  // W gesture mask
+    1 << 2,  // S gesture mask
+    1 << 3,  // e gesture mask
+    1 << 4,  // C gesture mask
+    1 << 5,  // Z gesture mask
+    1 << 6,  // V gesture mask
+    1 << 7,
+    1 << 7,
+    1 << 7,
+    1 << 7,
+    1 << 7,
+    1 << 7,
 };
 
 Return<void> TouchscreenGesture::getSupportedGestures(getSupportedGestures_cb resultCb) {
@@ -91,8 +97,7 @@ Return<bool> TouchscreenGesture::setGestureEnabled(
 
     if (gestureMode != 0) gestureMode |= kKeyMaskGestureControl;
 
-    // Strip first digit
-    file << encode_binary(gestureMode).substr(1);
+    file << encode_binary(gestureMode);
 
     return !file.fail();
 }
