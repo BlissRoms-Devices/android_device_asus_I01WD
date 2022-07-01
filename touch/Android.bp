@@ -14,9 +14,9 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.touch@1.0-service.I01WD",
-    init_rc: ["vendor.lineage.touch@1.0-service.I01WD.rc"],
-    vintf_fragments: ["vendor.lineage.touch@1.0-service.I01WD.xml"],
+    name: "vendor.lineage.touch@1.0-service.asus_msmnile",
+    init_rc: ["vendor.lineage.touch@1.0-service.asus_msmnile.rc"],
+    vintf_fragments: ["vendor.lineage.touch@1.0-service.asus_msmnile.xml"],
     defaults: ["hidl_defaults"],
     vendor: true,
     relative_install_path: "hw",

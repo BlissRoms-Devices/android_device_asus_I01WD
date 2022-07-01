@@ -2,7 +2,7 @@ on boot
     chown system system /proc/driver/glove
     chown system system /proc/driver/gesture_type
 
-service touch-hal-1-0 /vendor/bin/hw/vendor.lineage.touch@1.0-service.I01WD
+service touch-hal-1-0 /vendor/bin/hw/vendor.lineage.touch@1.0-service.asus_msmnile
     interface vendor.lineage.touch@1.0::IGloveMode default
     interface vendor.lineage.touch@1.0::ITouchscreenGesture default
     class hal
