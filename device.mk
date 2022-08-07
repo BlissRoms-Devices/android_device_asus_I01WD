@@ -40,6 +40,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/googlekey_input.kl:system/usr/keylayout/googlekey_input.kl \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
 
+# RRO Overlays
+PRODUCT_PACKAGES += \
+    Zenfone6SettingsProvider \
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
