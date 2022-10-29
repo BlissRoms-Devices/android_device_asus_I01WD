@@ -47,4 +47,4 @@ PRODUCT_SOONG_NAMESPACES += \
 $(call inherit-product, vendor/asus/I01WD/I01WD-vendor.mk)
 
 # sm8150-common
-$(call inherit-product, device/asus/sm8150-common/common.mk)
+$(call inherit-product, device/asus/sm8150-common/msmnile.mk)
