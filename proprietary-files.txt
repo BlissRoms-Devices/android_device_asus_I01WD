@@ -360,6 +360,7 @@ vendor/firmware/CAMERA_ICP.elf
 
 # Camera MotorService
 -priv-app/MotorService/MotorService.apk
+-priv-app/MotorK/MotorK.apk
 priv-app/MotorService/lib/arm64/libAsusLaserSensorHAL.so
 priv-app/MotorService/lib/arm64/libAsusMotorDriverHAL.so
 priv-app/MotorService/lib/arm64/libjni_laser.so
