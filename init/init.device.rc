@@ -1,0 +1,6 @@
+on init
+    chown system system /sys/devices/platform/soc/soc\:asustek_googlekey/googlekey_enable
+
+on boot
+    # Google Key
+    write /sys/devices/platform/soc/soc:asustek_googlekey/googlekey_enable 1
