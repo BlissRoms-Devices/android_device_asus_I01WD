@@ -30,7 +30,7 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 1073741824
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.qcom
 
 # Inherit from the proprietary version
 -include vendor/asus/I01WD/BoardConfigVendor.mk
