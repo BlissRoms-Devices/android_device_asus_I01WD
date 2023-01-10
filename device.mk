@@ -39,6 +39,7 @@ PRODUCT_COPY_FILES += \
 # RRO Overlays
 PRODUCT_PACKAGES += \
     Zenfone6SettingsProvider \
+    Zenfone6SettingsRes \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
